@@ -53,6 +53,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
+            rel="stylesheet"
+          />
           <meta name="theme-color" content={theme.color.primary} />
         </Head>
         <body>

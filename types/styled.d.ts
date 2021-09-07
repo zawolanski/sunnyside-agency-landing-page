@@ -2,22 +2,69 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    breakpoints: {
+      xxs: number;
+      xs: number;
+      md: number;
+      lg: number;
+      xl: number;
+      xxl: number;
+    };
     font: {
       family: {
-        roboto: string;
-        sourceCode: string;
+        barlow: string;
+        fraunces: string;
       };
       weight: {
-        light: number;
-        regular: number;
-        bold: number;
+        600: number;
+        700: number;
+        900: number;
       };
     };
     color: {
-      primary: string;
-      secondary: string;
+      common: {
+        black: string;
+        white: string;
+      };
+      underline: {
+        yellow: string;
+        red: string;
+      };
       text: {
-        normal: string;
+        light: string;
+        dark: string;
+        button: string;
+        grey: {
+          light: string;
+          dark: string;
+        };
+        green: {
+          light: string;
+          dark: string;
+        };
+        photography: {
+          green: {
+            dark: string;
+            normal: string;
+          };
+          blue: {
+            dark: string;
+            normal: string;
+          };
+        };
+      };
+      background: {
+        primary: string;
+        yellow: string;
+        footer: string;
+      };
+      action: {
+        light: string;
+        underline: {
+          yellow: string;
+          red: string;
+        };
+        button: string;
       };
     };
     radius: number;

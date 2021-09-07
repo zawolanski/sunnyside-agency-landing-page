@@ -11,13 +11,14 @@ const GlobalStyled = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.color.primary};
-        color: ${({ theme }) => theme.color.text.normal};
+        background: ${({ theme }) => theme.color.background.primary};
+        color: ${({ theme }) => theme.color.text.dark};
     }
 
-    body, button, input, textarea {
-        font-family: ${({ theme }) => theme.font.family.roboto}, sans-serif;
-        font-weight: ${({ theme }) => theme.font.weight.regular};
+    body, button {
+        font-family: ${({ theme }) => theme.font.family.barlow}, sans-serif;
+        font-weight: ${({ theme }) => theme.font.weight[600]};
+        font-size: 18px;
     }
 `;
 

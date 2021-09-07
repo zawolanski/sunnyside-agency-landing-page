@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import {
   ListItem,
   List,
@@ -11,6 +12,9 @@ import {
 
 const Home: NextPage = () => (
   <Container>
+    <Head>
+      <title>sunnyside</title>
+    </Head>
     <Content>
       <Header>Next.js template</Header>
       <ListHeader id="setup__with">Setup with: </ListHeader>

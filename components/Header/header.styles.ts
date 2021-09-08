@@ -5,6 +5,7 @@ const Header = styled.header`
   top: 0;
   left: 0;
   z-index: 15;
+  width: 100%;
 `;
 
 const Container = styled.div`

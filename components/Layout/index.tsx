@@ -4,7 +4,7 @@ import { PropsWithChildren, ReactNode } from 'react';
 const Layout = ({ children }: PropsWithChildren<ReactNode>): JSX.Element => (
   <>
     <Header />
-    {children}
+    <main>{children}</main>
   </>
 );
 

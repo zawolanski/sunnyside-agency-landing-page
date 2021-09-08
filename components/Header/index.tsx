@@ -4,7 +4,7 @@ import MenuIcon from '../../public/icons/icon-hamburger.svg';
 import Styled from './header.styles';
 
 const Header = (): JSX.Element => (
-  <header>
+  <Styled.Header>
     <Styled.Container>
       <Logo />
       <Styled.Navigation>
@@ -35,7 +35,7 @@ const Header = (): JSX.Element => (
         <MenuIcon />
       </Styled.MenuButton>
     </Styled.Container>
-  </header>
+  </Styled.Header>
 );
 
 export default Header;

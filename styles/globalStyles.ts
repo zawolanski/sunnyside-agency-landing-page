@@ -11,7 +11,7 @@ const GlobalStyled = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.color.background.footer};
+        background: ${({ theme }) => theme.color.background.primary};
         color: ${({ theme }) => theme.color.text.dark};
     }
 

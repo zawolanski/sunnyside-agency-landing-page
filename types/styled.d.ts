@@ -36,6 +36,7 @@ declare module 'styled-components' {
         button: string;
         grey: {
           light: string;
+          normal: string;
           dark: string;
         };
         green: {

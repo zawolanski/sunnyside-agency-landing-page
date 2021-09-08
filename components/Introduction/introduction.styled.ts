@@ -43,8 +43,7 @@ export const HeadingContainer = styled.div`
     margin: 0 auto;
     margin-top: 50px;
 
-    @media only screen and (min-width: ${({ theme }) =>
-        theme.breakpoints.md}px) {
+    @media only screen and (min-width: ${({ theme }) => theme.breakpoints.md}px) {
       margin-top: 100px;
     }
   }

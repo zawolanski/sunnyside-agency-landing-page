@@ -35,6 +35,7 @@ const theme: DefaultTheme = {
       button: 'hsla(212, 27%, 19%, 1)',
       grey: {
         light: 'hsla(210, 4%, 67%, 1)',
+        normal: 'hsla(233, 10%, 55%, 1)',
         dark: 'hsla(213, 9%, 39%, 1)',
       },
       green: {

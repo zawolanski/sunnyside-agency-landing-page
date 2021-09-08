@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
 import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Logo from '../../public/icons/logo.svg';
 import MenuIcon from '../../public/icons/icon-hamburger.svg';
 import Styled from './header.styles';
@@ -44,7 +45,7 @@ const Header = (): JSX.Element => {
             </li>
           </Styled.List>
         </Styled.Navigation>
-        {isOpen ? <MobileNav /> : null}
+        <AnimatePresence>{isOpen ? <MobileNav /> : null}</AnimatePresence>
         <Styled.MenuButton isOpen={isOpen} type="button" onClick={isOpen ? closeMenu : openMenu}>
           <MenuIcon />
         </Styled.MenuButton>

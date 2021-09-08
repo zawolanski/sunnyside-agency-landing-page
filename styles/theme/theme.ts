@@ -55,7 +55,7 @@ const theme: DefaultTheme = {
     },
     background: {
       primary: 'hsl(39, 100%, 99%)',
-      footer: 'hsl(168, 34%, 41%)',
+      footer: 'hsla(168, 44%, 70%, 1)',
       yellow: 'hsl(51, 100%, 49%)',
     },
     action: {

@@ -8,7 +8,7 @@ import Styled from './tiles.styled';
 
 const Tiles = (): JSX.Element => (
   <Styled.Grid>
-    <Styled.Section order={1}>
+    <Styled.Section order={2}>
       <div>
         <Styled.Heading>Transform your brand</Styled.Heading>
         <Styled.Paragraph>
@@ -20,13 +20,13 @@ const Tiles = (): JSX.Element => (
         </Link>
       </div>
     </Styled.Section>
-    <Styled.ImageContainer order={2}>
+    <Styled.ImageContainer order={1}>
       <Image src={EggImg} alt="" />
     </Styled.ImageContainer>
-    <Styled.ImageContainer order={4}>
+    <Styled.ImageContainer order={3}>
       <Image src={GlassImg} alt="" />
     </Styled.ImageContainer>
-    <Styled.Section order={3}>
+    <Styled.Section order={4}>
       <div>
         <Styled.Heading>Stand out to the right audience</Styled.Heading>
         <Styled.Paragraph>

@@ -6,7 +6,6 @@ import Document, {
   NextScript,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import theme from 'styles/theme/theme';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<{
@@ -57,7 +56,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"
             rel="stylesheet"
           />
-          <meta name="theme-color" content={theme.color.primary} />
         </Head>
         <body>
           <Main />

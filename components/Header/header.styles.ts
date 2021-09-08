@@ -60,12 +60,18 @@ const ListItemLink = styled.a<{ isContact?: boolean }>`
         `}
 `;
 
-const MenuButton = styled.button`
+const MenuButton = styled.button<{ isOpen: boolean }>`
   border: 0;
   background: transparent;
   cursor: pointer;
   padding: 5px;
+  transition: opacity 0.15s;
 
+  ${({ isOpen }) =>
+    isOpen &&
+    css`
+      opacity: 0.5;
+    `}
   @media only screen and (min-width: ${({ theme }) => theme.breakpoints.md}px) {
     display: none;
   }

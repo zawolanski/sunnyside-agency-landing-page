@@ -38,6 +38,7 @@ declare module 'styled-components' {
           light: string;
           normal: string;
           dark: string;
+          link: string;
         };
         green: {
           light: string;
@@ -66,6 +67,7 @@ declare module 'styled-components' {
           red: string;
         };
         button: string;
+        buttonYellow: string;
       };
     };
     radius: number;

@@ -37,6 +37,7 @@ const theme: DefaultTheme = {
         light: 'hsla(210, 4%, 67%, 1)',
         normal: 'hsla(233, 10%, 55%, 1)',
         dark: 'hsla(213, 9%, 39%, 1)',
+        link: 'hsla(232, 10%, 55%, 1)',
       },
       green: {
         light: 'hsla(167, 34%, 41%, 1)',
@@ -65,6 +66,7 @@ const theme: DefaultTheme = {
         red: 'hsla(7, 99%, 70%, 1)',
       },
       button: 'hsla(0, 0%, 100%, 0.25)',
+      buttonYellow: 'hsla(51, 100%, 49%, 0.5)',
     },
   },
   radius: 5,

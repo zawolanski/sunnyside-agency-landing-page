@@ -4,6 +4,11 @@ const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
+  margin-bottom: 86px;
+
+  @media only screen and (min-width: ${({ theme }) => theme.breakpoints.md}px) {
+    margin-bottom: 160px;
+  }
 `;
 
 const Heading = styled.h2`
@@ -11,7 +16,7 @@ const Heading = styled.h2`
   text-align: center;
   letter-spacing: 5px;
   font-size: 16px;
-  margin: 160px 0 80px;
+  margin-bottom: 80px;
   color: ${({ theme }) => theme.color.text.grey.light};
   font-weight: ${({ theme }) => theme.font.weight[900]};
   font-family: ${({ theme }) => theme.font.family.fraunces};

@@ -5,8 +5,10 @@ const Grid = styled.div`
   grid-template-columns: 1fr;
   max-width: 1440px;
   margin: 0 auto;
+  margin-bottom: 64px;
 
   @media only screen and (min-width: ${({ theme }) => theme.breakpoints.md}px) {
+    margin-bottom: 160px;
     grid-template-columns: repeat(2, 50%);
   }
 `;

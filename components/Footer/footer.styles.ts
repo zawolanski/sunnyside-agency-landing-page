@@ -6,9 +6,6 @@ const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media only screen and (min-width: ${({ theme }) => theme.breakpoints.md}px) {
-  }
 `;
 
 const LogoContainer = styled.a`

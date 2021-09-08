@@ -57,6 +57,18 @@ export const Heading = styled.h1`
   font-weight: ${({ theme }) => theme.font.weight[900]};
   font-family: ${({ theme }) => theme.font.family.fraunces};
   padding: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span {
+    display: flex;
+  }
+
+  span > span {
+    display: block;
+    padding: 0 3px;
+  }
 
   @media only screen and (min-width: ${({ theme }) => theme.breakpoints.md}px) {
     font-size: 56px;

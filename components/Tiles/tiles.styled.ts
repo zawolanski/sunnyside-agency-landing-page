@@ -13,10 +13,11 @@ const Grid = styled.div`
   }
 `;
 
-const ImageContainer = styled.div<{ order: number; topHeight?: boolean }>`
+const ImageContainer = styled.div<{ $order: number; topHeight?: boolean }>`
   height: ${({ topHeight }) => (topHeight ? '600px' : '330px')};
-  order: ${({ order }) => order};
+  order: ${({ $order }) => $order};
   position: relative;
+  overflow: hidden;
 
   @media only screen and (min-width: ${({ theme }) => theme.breakpoints.xs}px) {
     height: ${({ topHeight }) => (topHeight ? '600px' : '450px')};
@@ -65,11 +66,11 @@ const ImageContent = styled.div<{ textColor: 'green' | 'blue' }>`
   }
 `;
 
-const Section = styled.section<{ order: number }>`
+const Section = styled.section<{ $order: number }>`
   height: 440px;
   display: flex;
   align-items: center;
-  order: ${({ order }) => order};
+  order: ${({ $order }) => $order};
   padding: 64px 20px;
 
   div {

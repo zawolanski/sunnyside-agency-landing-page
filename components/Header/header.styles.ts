@@ -38,6 +38,7 @@ const ListItemLink = styled.a<{ isContact?: boolean }>`
   padding: 16px 24px;
   transition: background-color 0.15s;
   color: ${({ theme }) => theme.color.text.light};
+  position: relative;
 
   ${({ isContact, theme }) =>
     isContact
@@ -54,8 +55,23 @@ const ListItemLink = styled.a<{ isContact?: boolean }>`
           }
         `
       : css`
-          :hover {
-            text-decoration: underline;
+          ::after {
+            content: '';
+            position: absolute;
+            height: 5px;
+            left: 5%;
+            bottom: 0;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            transition: transform 0.15s;
+            transform-origin: right center;
+            transform: scaleX(0);
+          }
+
+          :hover::after {
+            transform: scaleX(1);
+            transform-origin: left center;
           }
         `}
 `;

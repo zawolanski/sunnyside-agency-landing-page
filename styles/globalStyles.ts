@@ -11,7 +11,7 @@ const GlobalStyled = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.color.background.primary};
+        background: ${({ theme }) => theme.color.background.footer};
         color: ${({ theme }) => theme.color.text.dark};
     }
 
@@ -19,6 +19,10 @@ const GlobalStyled = createGlobalStyle`
         font-family: ${({ theme }) => theme.font.family.barlow}, sans-serif;
         font-weight: ${({ theme }) => theme.font.weight[600]};
         font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
     }
 `;
 

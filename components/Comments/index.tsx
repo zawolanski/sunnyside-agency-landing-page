@@ -31,7 +31,7 @@ const Comments = (): JSX.Element => {
       <Styled.Cards as={motion.div} ref={cards} initial="initial" animate={inView ? 'animate' : ''} variants={variants}>
         <Styled.Card as={motion.div} variants={item}>
           <Styled.Avatar>
-            <Image src={EmilyImg} alt="" />
+            <Image src={EmilyImg} alt="" placeholder="blur" />
           </Styled.Avatar>
           <Styled.Comment>
             We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
@@ -42,7 +42,7 @@ const Comments = (): JSX.Element => {
         </Styled.Card>
         <Styled.Card as={motion.div} variants={item}>
           <Styled.Avatar>
-            <Image src={ThomasImg} alt="" />
+            <Image src={ThomasImg} alt="" placeholder="blur" />
           </Styled.Avatar>
           <Styled.Comment>
             Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
@@ -53,7 +53,7 @@ const Comments = (): JSX.Element => {
         </Styled.Card>
         <Styled.Card as={motion.div} variants={item}>
           <Styled.Avatar>
-            <Image src={JennieImg} alt="" />
+            <Image src={JennieImg} alt="" placeholder="blur" />
           </Styled.Avatar>
           <Styled.Comment>
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!

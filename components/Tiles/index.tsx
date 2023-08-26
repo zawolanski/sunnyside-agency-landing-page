@@ -48,10 +48,10 @@ const Tiles = (): JSX.Element => {
         </motion.div>
       </Styled.Section>
       <Styled.ImageContainer $order={1}>
-        <Image src={EggImg} alt="" />
+        <Image src={EggImg} alt="" placeholder="blur" priority />
       </Styled.ImageContainer>
       <Styled.ImageContainer $order={3}>
-        <Image src={GlassImg} alt="" />
+        <Image src={GlassImg} alt="" placeholder="blur" />
       </Styled.ImageContainer>
       <Styled.Section $order={4}>
         <motion.div ref={section2} initial="initial" animate={inView2 ? 'animate' : ''} variants={variants}>
@@ -70,7 +70,7 @@ const Tiles = (): JSX.Element => {
         </motion.div>
       </Styled.Section>
       <Styled.ImageContainer $order={5} topHeight>
-        <Image src={CherryImg} alt="" />
+        <Image src={CherryImg} alt="" placeholder="blur" />
         <Styled.ImageContent
           as={motion.div}
           ref={photoText}
@@ -87,7 +87,7 @@ const Tiles = (): JSX.Element => {
         </Styled.ImageContent>
       </Styled.ImageContainer>
       <Styled.ImageContainer $order={5} topHeight>
-        <Image src={OrangeImg} alt="" />
+        <Image src={OrangeImg} alt="" placeholder="blur" />
         <Styled.ImageContent
           as={motion.div}
           ref={photoText}

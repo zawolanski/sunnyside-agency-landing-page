@@ -51,7 +51,7 @@ const Introduction = (): JSX.Element => (
       </motion.div>
     </HeadingContainer>
     <ImageContainer>
-      <Image alt="" src={ImageHeader} layout="responsive" />
+      <Image alt="" src={ImageHeader} layout="responsive" placeholder="blur" priority loading="eager" />
     </ImageContainer>
   </Container>
 );

@@ -30,16 +30,16 @@ const Galery = (): JSX.Element => {
   return (
     <Styled.Grid as={motion.div} ref={ref} initial="initial" animate={inView ? 'animate' : ''} variants={variants}>
       <motion.div variants={item}>
-        <Image alt="" src={Cone} />
+        <Image alt="" src={Cone} placeholder="blur" />
       </motion.div>
       <motion.div variants={item}>
-        <Image alt="" src={Orange} />
+        <Image alt="" src={Orange} placeholder="blur" />
       </motion.div>
       <motion.div variants={item}>
-        <Image alt="" src={Milkbottles} />
+        <Image alt="" src={Milkbottles} placeholder="blur" />
       </motion.div>
       <motion.div variants={item}>
-        <Image alt="" src={Sugarcubes} />
+        <Image alt="" src={Sugarcubes} placeholder="blur" />
       </motion.div>
     </Styled.Grid>
   );

@@ -39,6 +39,7 @@ This is a solution to the [Sunnyside agency landing page](https://www.frontendme
 - styled-reset
 - Eslint (Airbnb config)
 - Prettier
+- [framer-motion](https://www.framer.com/)
 
 ## Author
 
